@@ -1,0 +1,70 @@
+
+---
+
+## 📄 `.gitignore`
+
+Since you’re mixing **Python, FastAPI, Plutus (Haskell), and general dev tooling**, here’s a combined `.gitignore`:
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.log
+.env
+.env.*
+*.sqlite3
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build outputs
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# IDE / Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tests & coverage
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.mypy_cache/
+
+# Haskell / Plutus
+dist-newstyle/
+.stack-work/
+*.hi
+*.o
+*.dyn_o
+*.dyn_hi
+*.prof
+*.aux
+*.eventlog
+
+# Mac / OS
+.DS_Store
+Thumbs.db
+
+# QR Code images (generated)
+qr_output/
+*.png
+
+# Docker
+docker-compose.override.yml
+*.pid
